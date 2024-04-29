@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <title>College Website </title>
+</head>
+<body>
+   <section class="header">
+    <nav class="navbar">
+        <a href="index.html"><img src="https://www.joonsquare.com/usermanage/image/business/bharati-vidyapeeth-college-of-engineering-and-pharmacy-kolhapur-13714/bharati-vidyapeeth-college-of-engineering-and-pharmacy-kolhapur-logo.jpg" class="logo"></a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="text-box">
+        <h1>Bharati Vidhypeeth's college </h1>
+        <p>At Bharati Vidyapeeth's College, we believe in nurturing excellence and fostering innovation. With a rich heritage of academic excellence and a commitment to holistic education, we strive to empower our students to become leaders and changemakers in their respective fields.</p>
+        <a href="" class="hero-btn">Visit Us To Know More:</a>
+       </div>
+   </section>
+
+
+   
+   <section class="campus">
+    <h1>Courses we offer </h1>
+    <p>Embark on an educational journey with our comprehensive range of courses, designed to unlock your potential and pave the way for academic excellence
+    </p>
+    <div class="row">
+        <div class="campus-col" >
+            <img src="https://img.freepik.com/free-vector/bitcoin-technology-network-digital-background_1017-11765.jpg?w=740&t=st=1714396957~exp=1714397557~hmac=d8d577db3bd2dd9d9786efda3cfe56d64e32c2a313547f5a64f57dd381769f88" height="360px" alt="">
+            <div class="layer">
+                <h3>Btech</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://1.bp.blogspot.com/-b6GbBkJORb0/XxV61U8_lFI/AAAAAAAAAUo/9OQN7vMu2YE_DSeRZhoRy3LbHlGOUSMNACLcBGAsYHQ/w1200-h630-p-k-no-nu/BBA.png" height="360px" alt="">
+            <div class="layer" >
+                <h3>BBA</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://www.iimtindia.net/Blog/wp-content/uploads/2021/06/BCA.jpg"  height="360px" alt="">
+            <div class="layer">
+                <h3>BCA</h3>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="course">
+    <h1>Courses details</h1>
+    <p>Explore the comprehensive curriculum offered across our diverse range of programs, meticulously designed to foster academic excellence and professional growth.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3 class="course-title" onclick="toggleCourseDetails('btech')">Btech (courses)</h3>
+            <div class="course-details btech" style="display: none;">
+                <p>This program offers courses such as Information Technology (IT), Computer Science Engineering (CSE), Electronics and Communication Engineering (ECE), and Electrical Engineering (EE).</p>
+            </div>
+        </div>
+        <div class="course-col">
+            <h3 class="course-title" onclick="toggleCourseDetails('bba')">BBA</h3>
+            <div class="course-details bba" style="display: none;">
+                <p>The BBA program covers subjects like Marketing Management, Financial Accounting, Managerial Economics, and Business Statistics.</p>
+            </div>
+        </div>
+        <div class="course-col">
+            <h3 class="course-title" onclick="toggleCourseDetails('bca')">BCA</h3>
+            <div class="course-details bca" style="display: none;">
+                <p>The BCA curriculum includes courses such as Programming Fundamentals, Data Structures and Algorithms, Computer Networks, and Database Management Systems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h1>Enroll for our various courses<br>Anywhere from the World</h1>
+    <a href="#" class="hero-btn" onclick="toggleContactInfo(event)">CONTACT US</a>
+    <div id="contactInfo" style="display: none;">
+        <p><strong>Address:</strong> BVP, New Delhi</p>
+        <p><strong>Phone Number:</strong> 8798999090</p>
+    </div>
+</section>
+<section class="footer">
+    <div id='footer' class='container-fluid' style='height: 200px;'>
+        <div style='background-color:black;' class="bgcolor row">
+            <div class="col-sm-8">
+                <div style="margin-top:15px; color: white;" class="pull-right">
+                    <h5>ABOUT US</h5>
+                    <p>Welcome to our vibrant community at [Your College Name], where innovation meets excellence and dreams take flight. We are more than just an educational institution; we are a family of passionate learners, dedicated educators, and visionary leaders striving to make a positive impact on the world.</p>
+                    <p>Copyright &copy; BVP College Admission Guide</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class=" t pull-right">
+                    <a href="#" class="contact-btn" onclick="toggleContactInfo()">CONTACT US</a>
+                    <div id="contactInfo" style="display: none;">
+                        <p><strong>Address:</strong> BVP, New Delhi</p>
+                        <p><strong>Phone Number:</strong> 8798999090</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
